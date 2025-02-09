@@ -8,13 +8,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Suppress hydration warnings
-  const [mounted, setMounted] = React.useState(false)
-  
-  React.useEffect(() => {
-    setMounted(true)
-  }, [])
-
   return (
     <html lang="en">
       <body 

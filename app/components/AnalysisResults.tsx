@@ -1,6 +1,5 @@
 'use client'
 
-import { Card, CardContent } from '@/app/components/ui/card'
 import type { AnalysisResult } from '@/app/types'
 
 interface AnalysisResultsProps {
