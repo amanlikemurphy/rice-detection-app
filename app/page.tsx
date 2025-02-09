@@ -9,7 +9,6 @@ import ImageUpload from '@/app/components/ImageUpload'
 import type { AnalysisResult } from '@/app/types'
 
 export default function Page() {
-  const [file, setFile] = useState<File | null>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
   const [fileId, setFileId] = useState<string | null>(null) // Store correct S3-generated ID
   const [results, setResults] = useState<AnalysisResult | null>(null)
@@ -19,7 +18,6 @@ export default function Page() {
   const handleFileChange = async (file: File | null) => {
     if (!file) return
   
-    setFile(file)
     setResults(null)
     setError(null)
   

@@ -3,6 +3,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Upload } from 'lucide-react'
+import Image from 'next/image'
 
 interface ImageUploadProps {
   onFileChange: (file: File | null) => void
@@ -64,9 +65,11 @@ const ImageUpload = ({ onFileChange, imageUrl }: ImageUploadProps) => {
           disabled={isUploading}
         />
         {displayUrl ? (
-          <img
+          <Image
             src={displayUrl}
             alt="Upload preview"
+            width={800}
+            height={600}
             className="max-w-full max-h-[32rem] object-contain rounded-lg"
           />
         ) : (

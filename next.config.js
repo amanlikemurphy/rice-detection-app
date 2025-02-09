@@ -10,6 +10,8 @@ const nextConfig = {
     S3_BUCKET_NAME: process.env.NEXT_PUBLIC_S3_BUCKET,
     DYNAMODB_TABLE_NAME: process.env.NEXT_PUBLIC_DYNAMODB_TABLE,
     MODEL_ARN: process.env.NEXT_PUBLIC_MODEL_ARN,
+    AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
+    AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
   },
   webpack: (config) => {
     config.module.rules.push({
