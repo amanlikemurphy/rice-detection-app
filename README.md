@@ -3,7 +3,7 @@
 ## Overview 🌾
 This project is focused on building a **cloud-native web application** for AgroVisionLabs (a fictional agritech company). The application enables farmers to upload images of rice leaves to detect diseases using **AWS Rekognition** and serverless infrastructure.
 
-[Full project link:](https://murphyelo.com/posts/agrovisionlabs/project-overview/).
+[Full project link](https://murphyelo.com/posts/agrovisionlabs/project-overview/)
 ---
 
 ## Features ✨
